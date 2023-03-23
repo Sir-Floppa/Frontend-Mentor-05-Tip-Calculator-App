@@ -1,1 +1,46 @@
-<p>panel works!</p>
+<form>
+  <div class="field">
+    <label for="bill">Bill</label>
+    <input type="number" name="bill" id="bill" />
+  </div>
+
+  <div class="field">
+    <label for="percentage">Select Tip %</label>
+    <section>
+      <div class="radio-element">
+        <input type="radio" name="percentage" id="radio-5pc"/>
+        <label for="radio-5pc">5%</label>
+      </div>
+
+      <div class="radio-element">
+        <input type="radio" name="percentage" id="radio-10pc"/>
+        <label for="radio-10pc">10%</label>
+      </div>
+
+      <div class="radio-element">
+        <input type="radio" name="percentage" id="radio-15pc"/>
+        <label for="radio-15pc">15%</label>
+      </div>
+
+      <div class="radio-element">
+        <input type="radio" name="percentage" id="radio-25pc"/>
+        <label for="radio-25pc">25%</label>
+      </div>
+
+      <div class="radio-element">
+        <input type="radio" name="percentage" id="radio-50pc"/>
+        <label for="radio-50pc">50%</label>
+      </div>
+
+      <div class="radio-element">
+        <input type="radio" name="percentage" id="radio-custom">
+        <input type="number" placeholder="Custom" id="radio-custom" for="radio-custom"/>
+      </div>
+    </section>
+  </div>
+
+  <div class="field">
+    <label for="peopleNumber">Number of People</label>
+    <input type="number" name="peopleNumber" id="peopleNumber">
+  </div>
+</form>
