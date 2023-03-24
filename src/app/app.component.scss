@@ -6,7 +6,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   gap: 2rem;
 }
 
@@ -16,4 +16,9 @@ h1 {
 
 app-panel, app-answer {
   width: 50%;
+  min-height: 100%;
+}
+
+footer {
+  text-align: center;
 }
