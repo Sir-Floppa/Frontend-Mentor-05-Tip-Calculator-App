@@ -1,1 +1,19 @@
-<p>answer works!</p>
+<section>
+  <div class="answers">
+    <div class="amount">
+      <p>Tip Amount</p>
+      <p class="tag">/ person</p>
+    </div>
+    <div id="tipAmount">{{ 42 | currency }}</div>
+  </div>
+
+  <div class="answers">
+    <div class="amount">
+      <p>Total</p>
+      <p class="tag">/ person</p>
+    </div>
+    <div id="total">{{ 4.2 | currency }}</div>
+  </div>
+
+  <button>Reset</button>
+</section>
