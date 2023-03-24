@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-panel',
@@ -11,11 +11,14 @@ export class PanelComponent {
   percentage: number;
 
   customPercentage: number;
+
+  @Output() billEvent = new EventEmitter<number>();
+  @Output() peopleEvent = new EventEmitter<number>();
+  @Output() percentageEvent = new EventEmitter<number>();
   
   checkCustom() {
     const customCheck = document.querySelector('#radio-custom');
     (<HTMLFormElement>customCheck)['checked'] = true;
-    console.log(this.percentage)
   }
   
   asignCustom() {

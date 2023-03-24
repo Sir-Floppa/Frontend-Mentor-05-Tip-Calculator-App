@@ -7,6 +7,7 @@
       id="bill"
       placeholder="0"
       [(ngModel)]="bill"
+      (keyup)="billEvent.emit(bill)"
     />
   </div>
 
@@ -20,6 +21,7 @@
           id="radio-5pc"
           value="5"
           [(ngModel)]="percentage"
+          (change)="percentageEvent.emit(percentage)"
         />
         <label for="radio-5pc">5%</label>
       </div>
@@ -31,6 +33,7 @@
           id="radio-10pc"
           value="10"
           [(ngModel)]="percentage"
+          (change)="percentageEvent.emit(percentage)"
         />
         <label for="radio-10pc">10%</label>
       </div>
@@ -42,6 +45,7 @@
           id="radio-15pc"
           value="15"
           [(ngModel)]="percentage"
+          (change)="percentageEvent.emit(percentage)"
         />
         <label for="radio-15pc">15%</label>
       </div>
@@ -53,6 +57,7 @@
           id="radio-25pc"
           value="25"
           [(ngModel)]="percentage"
+          (change)="percentageEvent.emit(percentage)"
         />
         <label for="radio-25pc">25%</label>
       </div>
@@ -64,6 +69,7 @@
           id="radio-50pc"
           value="50"
           [(ngModel)]="percentage"
+          (change)="percentageEvent.emit(percentage)"
         />
         <label for="radio-50pc">50%</label>
       </div>
@@ -84,6 +90,7 @@
           [ngModelOptions]="{ standalone: true }"
           (keyup)="asignCustom()"
           (focus)="asignCustom()"
+          (keyup)="percentageEvent.emit(percentage)"
         />
       </div>
     </section>
@@ -97,6 +104,7 @@
       id="peopleNumber"
       placeholder="0"
       [(ngModel)]="peopleNumber"
+      (keyup)="peopleEvent.emit(peopleNumber)"
     />
   </div>
 </form>

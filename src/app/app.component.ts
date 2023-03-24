@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = '05-Tip-Calculator-App';
+  bill: number;
+  peopleNumber: number;
+  percentage: number;
 }
