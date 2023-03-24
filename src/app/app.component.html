@@ -2,6 +2,7 @@
 
 <main>
   <app-panel
+    [resetEvent]="resetEvent.asObservable()"
     (billEvent)="bill = $event"
     (peopleEvent)="peopleNumber = $event"
     (percentageEvent)="percentage = $event"
@@ -10,6 +11,7 @@
     [bill]="bill"
     [peopleNumber]="peopleNumber"
     [percentage]="percentage"
+    (resetEvent)="resetPanel()"
   ></app-answer>
 </main>
 

@@ -1,14 +1,15 @@
 section {
   background-color: hsl(183, 100%, 15%);
-  padding: 2.5rem 2rem ;
-  border-radius: 2rem;
+  padding: 2.5rem 2rem;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 }
 
-p, div {
+p,
+div {
   color: white;
 }
 
@@ -20,14 +21,18 @@ button {
   text-transform: uppercase;
   border: none;
   background-color: hsl(172, 67%, 45%);
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 
   &:hover {
-    background-color: #A0E7DF;
+    background-color: #a0e7df;
   }
 
   &:active {
     font-size: 1.05rem;
+  }
+
+  &:disabled {
+    opacity: 0.4;
   }
 }
 
@@ -45,10 +50,17 @@ button {
   color: hsl(184, 14%, 56%);
 }
 
-#tipAmount, #total {
+#tipAmount,
+#total {
   grid-row-start: 1;
   grid-row-end: 2;
   font-size: 2.5rem;
   font-weight: bold;
   color: hsl(172, 67%, 45%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }

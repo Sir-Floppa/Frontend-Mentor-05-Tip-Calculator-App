@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-answer',
@@ -10,7 +10,13 @@ export class AnswerComponent {
   @Input() peopleNumber: number;
   @Input() percentage: number;
 
+  @Output() resetEvent = new EventEmitter<void>();
+
   calcTipPerPerson() {
     return ((this.bill / 100) * this.percentage) / this.peopleNumber; 
+  }
+
+  reset() {
+    this.resetEvent.emit();
   }
 }
