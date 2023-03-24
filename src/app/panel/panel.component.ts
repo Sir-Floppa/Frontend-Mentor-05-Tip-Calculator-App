@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./panel.component.scss']
 })
 export class PanelComponent {
-
+  bill: number;
+  peopleNumber: number;
 }
