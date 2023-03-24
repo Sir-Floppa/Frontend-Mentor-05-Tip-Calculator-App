@@ -5,7 +5,7 @@
         <p>Tip Amount</p>
         <p class="tag">/ person</p>
       </div>
-      <div id="tipAmount">{{ 42 | currency }}</div>
+      <div id="tipAmount">{{ calcTipPerPerson() || 0 | currency }}</div>
     </div>
   
     <div class="answers">
@@ -13,7 +13,7 @@
         <p>Total</p>
         <p class="tag">/ person</p>
       </div>
-      <div id="total">{{ 4.2 | currency }}</div>
+      <div id="total">{{ bill / peopleNumber + calcTipPerPerson() || 0 | currency }}</div>
     </div>
   </div>
 
