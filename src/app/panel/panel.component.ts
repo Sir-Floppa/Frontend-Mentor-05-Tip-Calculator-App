@@ -8,4 +8,17 @@ import { Component } from '@angular/core';
 export class PanelComponent {
   bill: number;
   peopleNumber: number;
+  percentage: number;
+
+  customPercentage: number;
+  
+  checkCustom() {
+    const customCheck = document.querySelector('#radio-custom');
+    (<HTMLFormElement>customCheck)['checked'] = true;
+    console.log(this.percentage)
+  }
+  
+  asignCustom() {
+    this.percentage = this.customPercentage;
+  }
 }

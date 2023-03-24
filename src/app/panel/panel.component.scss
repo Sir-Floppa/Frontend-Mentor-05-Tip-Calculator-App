@@ -69,6 +69,10 @@ section {
     label {
       color: hsl(183, 100%, 15%);
     }
+
+    input {
+      border: 1px solid hsl(172, 67%, 45%);
+    }
   }
 
   &:has(input[type="number"]) {
