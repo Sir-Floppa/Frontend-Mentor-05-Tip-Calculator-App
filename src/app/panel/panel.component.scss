@@ -123,3 +123,13 @@ section {
 #peopleNumber {
   @include useIcon(url("../../assets/images/icon-person.svg"));
 }
+
+@media (max-width: 1050px) {
+  form {
+    gap: 1rem;
+  }
+
+  section {
+    grid-template-columns: 50% 50%;
+  }
+}

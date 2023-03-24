@@ -33,3 +33,27 @@ footer {
   position: absolute;
   gap: 4rem;
 }
+
+@media (max-width: 1050px) {
+  main {
+    display: flexbox;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 2rem 1.5rem;
+  }
+
+  app-panel, app-answer {
+    width: 100%;
+  }
+
+  :host {
+    gap: 2rem;
+    justify-content: flex-start;
+  }
+
+  header {
+    margin-top: 2rem;
+  }
+}

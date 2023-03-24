@@ -23,3 +23,13 @@ app-root {
   width: 50%;
   height: 45%;
 }
+
+@media (max-width: 1050px) {
+  app-root {
+    width: 100%;
+  }
+
+  body {
+    justify-content: space-between;
+  }
+}
