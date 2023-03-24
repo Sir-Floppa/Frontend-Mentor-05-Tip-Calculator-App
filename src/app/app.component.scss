@@ -36,20 +36,22 @@ footer {
 
 @media (max-width: 1050px) {
   main {
-    display: flexbox;
     flex-direction: column;
     justify-content: flex-start;
     min-width: 100%;
-    min-height: 100%;
     padding: 2rem 1.5rem;
+    min-height: auto;
   }
-
+  
   app-panel, app-answer {
     width: 100%;
+    min-height: auto;
+    max-height: 50%;
   }
 
   :host {
-    gap: 2rem;
+    gap: 1.25rem;
+    height: 100%;
     justify-content: flex-start;
   }
 

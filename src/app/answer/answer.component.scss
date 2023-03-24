@@ -64,3 +64,9 @@ button {
   flex-direction: column;
   gap: 2rem;
 }
+
+@media (max-width: 1050px) {
+  .container {
+    gap: .5rem;
+  }
+}
