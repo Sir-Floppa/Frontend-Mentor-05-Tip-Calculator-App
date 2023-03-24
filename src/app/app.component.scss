@@ -8,6 +8,8 @@ main {
   justify-content: space-between;
   align-items: stretch;
   gap: 2rem;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 h1 {
@@ -21,4 +23,13 @@ app-panel, app-answer {
 
 footer {
   text-align: center;
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  gap: 4rem;
 }
